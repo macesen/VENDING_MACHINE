@@ -13,8 +13,8 @@ import gc
 gc.collect()
 
 #CONEXION Y CLAVE DE INTERNET----------------------------------------------------------------
-ssid = 'NETLIFE-C-B'
-password = '0602092686'
+ssid = 'red'
+password = 'clave'
 #CONEXION AL BROKER, SIEMPRE USAR 'broker.emqx.io'--------------------------------------------
 mqtt_server = 'broker.emqx.io'
 client_id = ubinascii.hexlify(machine.unique_id())
