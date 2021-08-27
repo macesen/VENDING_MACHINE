@@ -27,7 +27,7 @@ def sub_cb(topic, msg):
   duty_p = int(duty_p*1023/20)
   if topic == b'boton_3' and msg == b'Se encendio el boton_1':
     motion = False
-    print('ESP32B prendio el led rojo')
+    print('ESP32B encendio el servo 1')
     servo_360_1.duty(duty)
     while True:
       if motion:
@@ -41,7 +41,7 @@ def sub_cb(topic, msg):
 
   if topic == b'boton_3' and msg == b'Se encendio el boton_2':
     motion = False
-    print('ESP32B apago el led azul')
+    print('ESP32B encendio el servo 2')
     servo_360_2.duty(duty)
     while True:
       if motion:
@@ -54,7 +54,7 @@ def sub_cb(topic, msg):
 
   if topic == b'boton_3' and msg == b'Se encendio el boton_3':
     motion = False
-    print('ESP32B apago el led naranja')
+    print('ESP32B encendio el servo 3')
     servo_360_3.duty(duty)
     while True:
       if motion:
