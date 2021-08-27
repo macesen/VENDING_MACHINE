@@ -34,18 +34,7 @@ while station.isconnected() == False:
 
 print('Connection successful')
 print(station.ifconfig())   
-'''
-led_1=Pin(19,Pin.OUT)
 
-
-led_2=Pin(18,Pin.OUT)
-
-
-led_3=Pin(5,Pin.OUT)
-
-
-boton_1=Pin(26,Pin.IN)
-'''
 #SERVOS
 servo_360_1 = PWM(Pin(17))
 servo_360_1.freq(50)
