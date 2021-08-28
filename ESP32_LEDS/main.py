@@ -51,9 +51,6 @@ def cycle(r, g, b,r2, g2, b2,r3, g3, b3,wait):
 #--------------------------------------------------------------FUNCIONES------------------------------------------------------------
 
 #-----------------------------------------------------------------------------------------------------------------------------------
-#clear()
-#set_color(r, g, b)
-# time.sleep(1)
 
 #SUSCRIPTOR RECIBE MENSAJES
 def sub_cb(topic, msg):
@@ -202,7 +199,7 @@ def restart_and_reconnect():
   time.sleep(10)
   machine.reset()
 
-#FUNCION QUE ESTABLECE CONEXION CON EL BROKER def connect_and_subscribe():   global client_id, mqtt_server, topic_sub   client = MQTTClient(client_id, mqtt_server)   client.set_callback(sub_cb)   client.connect()   client.subscribe(topic_sub)   print('Connected to %s MQTT broker, subscribed to %s topic' % (mqtt_server, topic_sub))   return client #EN CASO DE DESCONEXION O QUE NO SE PUEDE CONECTAR  def restart_and_reconnect():   print('Failed to connect to MQTT broker. Reconnecting...')   time.sleep(10)   machine.reset()
+#FUNCION QUE ESTABLECE CONEXION CON EL BROKER 
 #-----------------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------PROGRAMA-------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------
